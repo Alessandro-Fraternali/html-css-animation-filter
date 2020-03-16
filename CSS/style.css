@@ -195,7 +195,7 @@ a:hover {
   color: #ff6600;
 }
 
-.col-xs-12:hover .ex-12-top-white {
+.ex-12-button:hover .ex-12-top-white {
   animation: sopra12 2s linear;
 }
 
@@ -211,7 +211,7 @@ a:hover {
     }
 }
 
-.col-xs-12:hover .ex-12-bottom-white {
+.ex-12-button:hover .ex-12-bottom-white {
   animation: sotto12 2s linear;
 }
 
@@ -225,4 +225,64 @@ a:hover {
     100% {
       right: 20%;
     }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+  animation: sopra13 2s linear;
+}
+
+@keyframes sopra13 {
+  0% {
+      left: 10%;
+  }
+  30% {
+      left: calc(100% - 60px);
+      top: -10px;
+  }
+  45% {
+      left: calc(100% - 30px);
+      top: 100%;
+  }
+  75% {
+      left: 0;
+      top: 100%;
+  }
+  90% {
+      left: -15px;
+      top: -10px;
+  }
+  100% {
+      left: 10%;
+      top: -10px;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: sotto13 2s linear;
+}
+
+@keyframes sotto13 {
+  0% {
+      right: 10%;
+  }
+  30% {
+      right: calc(100% - 60px);
+      bottom: -10px;
+  }
+  45% {
+      right: calc(100% - 30px);
+      bottom: 100%;
+  }
+  75% {
+      right: 0;
+      bottom: 100%;
+  }
+  90% {
+      right: -15px;
+      bottom: -10px;
+  }
+  100% {
+      right: 10%;
+      bottom: -10px;
+  }
 }
