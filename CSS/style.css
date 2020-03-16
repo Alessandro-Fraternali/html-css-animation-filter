@@ -107,7 +107,7 @@ body {
 }
 
 .ex-4-square:hover {
-  visibility: hidden;
+  opacity:0;
 }
 
 .ex-5-square {
@@ -173,18 +173,27 @@ body {
 }
 
 .ex-11-icon:hover {
-  animation: cambiogiro 2s linear
+  animation: cambiogiro 2.5s linear
 }
 
 @keyframes cambiogiro {
     0% {
       transform: rotate(0);
     }
-    50% {
+    33% {
       transform: rotate(350deg);
     }
+    66% { color:#ff6600; }
 }
 
 a:hover {
   color: #ff6600;
+}
+
+.ex-12-top-white:hover {
+  background-color: red;
+}
+
+.ex-12-bottom-white:hover {
+  background-color: green;
 }
