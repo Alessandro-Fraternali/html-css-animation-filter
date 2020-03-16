@@ -163,7 +163,7 @@ body {
 }
 
 .ex-10-icon {
-  animation: girotondo 1.5s linear infinite
+  animation: girotondo 1.5s linear infinite;
 }
 
 @keyframes girotondo {
@@ -173,27 +173,56 @@ body {
 }
 
 .ex-11-icon:hover {
-  animation: cambiogiro 2.5s linear
+  animation: cambiogiro 2.5s linear;
 }
 
 @keyframes cambiogiro {
     0% {
       transform: rotate(0);
     }
-    33% {
+    30% {
+      color:#ff6600;
+    }
+    60% {
       transform: rotate(350deg);
     }
-    66% { color:#ff6600; }
+    90% {
+      color:#ff6600;
+    }
 }
 
 a:hover {
   color: #ff6600;
 }
 
-.ex-12-top-white:hover {
-  background-color: red;
+.col-xs-12:hover .ex-12-top-white {
+  animation: sopra12 2s linear;
 }
 
-.ex-12-bottom-white:hover {
-  background-color: green;
+@keyframes sopra12 {
+    0%{
+      left: 10%;
+    }
+    50% {
+      left:calc(100% - 60px);
+    }
+    100% {
+      left: 10%;
+    }
+}
+
+.col-xs-12:hover .ex-12-bottom-white {
+  animation: sotto12 2s linear;
+}
+
+@keyframes sotto12 {
+    0%{
+      right: 20%;
+    }
+    50% {
+      right: calc(100% - 60px);
+    }
+    100% {
+      right: 20%;
+    }
 }
