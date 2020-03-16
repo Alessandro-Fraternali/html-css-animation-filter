@@ -141,3 +141,12 @@ body {
 .ex-7-img:hover {
   filter: grayscale(15%) sepia(30%);
 }
+
+.ex-8-img {
+  transition: all 3s ease 0s;
+}
+
+.ex-8-img:hover {
+  filter: hue-rotate(210deg) saturate(1);
+  border-radius: 30px;
+}
