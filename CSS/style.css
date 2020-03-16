@@ -92,3 +92,11 @@ body {
 .ex-2-square:active {
   width: calc(100% - 5px);
 }
+
+.ex-3-square {
+  transition: all 1s ease 0s;
+}
+
+.ex-3-square:hover {
+  border-radius: 100px;
+}
