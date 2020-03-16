@@ -125,3 +125,19 @@ body {
   height: 30px;
   width: 30px;
 }
+
+.ex-6-img {
+  transition: all 0s ease 0s;
+}
+
+.ex-6-img:hover {
+  filter: grayscale(100%);
+}
+
+.ex-7-img {
+  transition: all 1s ease 0s;
+}
+
+.ex-7-img:hover {
+  filter: grayscale(15%) sepia(30%);
+}
