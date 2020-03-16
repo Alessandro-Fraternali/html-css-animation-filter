@@ -84,3 +84,11 @@ body {
 .ex-1-square:hover {
   background-color: #ff6600;
 }
+
+.ex-2-square {
+  transition: all 1.5s;
+}
+
+.ex-2-square:active {
+  width: calc(100% - 5px);
+}
